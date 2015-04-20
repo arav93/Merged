@@ -1,1 +1,2 @@
 # clojure.repl
+# clojure.template
