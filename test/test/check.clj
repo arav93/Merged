@@ -24,5 +24,6 @@
 (set/rename #{  {:a 1, :b 1}  {:a 2, :b 2} } {:a :new-a})
 (set/rename-keys {:a 1, :b 2} {:a :new-a, :b :new-b})
 (set/select odd? #{1 2 3} )
+(data/diff '[1 2 3] '[1 2])
  
 
