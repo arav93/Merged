@@ -17,6 +17,9 @@
 (t/ann ^:no-check clojure.set/rename [(t/Set t/Any) (t/Map t/Any t/Any) -> (t/Set t/Any)])
 (t/ann ^:no-check clojure.set/rename-keys [(t/Map t/Any t/Any) (t/Map t/Any t/Any) -> (t/Map t/Any t/Any)])
 (t/ann ^:no-check clojure.set/select [ (t/IFn [t/AnyInteger -> java.lang.Boolean]) (t/Set t/Any) -> (t/Set t/Any)])
+(t/ann ^:no-check clojure.data/diff [(t/U (t/List t/Any ) (t/HVec [t/Any *] )) (t/U (t/List t/Any ) (t/HVec [t/Any *] ))->  (t/HVec [t/Any *] )])
+
+
 
 
 
