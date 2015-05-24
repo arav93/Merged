@@ -9,6 +9,7 @@
 
 
 (template/apply-template '[a b c d e] '[d a b e c e b a d] '(1 2 3 4 5))
+(template/do-template [x y] (+ y x) 2 4 3 5)
 (repl/apropos "clojure")
 (repl/demunge "clojure.repl$demunge")
 (repl/source-fn 'source)
