@@ -2,6 +2,7 @@
 (:require [clojure.core.typed :as t]))
 
 (t/ann ^:no-check clojure.template/apply-template [ (t/HVec [t/Any *]) (t/HVec [t/Any *])(t/List t/Any ) -> (t/HVec [t/Any *])])
+(t/ann ^:no-check clojure.template/do-template [ (t/HVec [t/Any *]) (t/HVec [t/Any *]) (t/AnyValue * ) -> (t/HVec [t/Any *])])
 (t/ann ^:no-check clojure.repl/apropos [String -> (clojure.lang.LazySeq String)])
 (t/ann ^:no-check clojure.repl/demunge [String -> String])
 (t/ann ^:no-check clojure.repl/source-fn [clojure.lang.Symbol -> String])
