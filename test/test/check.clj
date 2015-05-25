@@ -26,5 +26,5 @@
 (set/rename-keys {:a 1, :b 2} {:a :new-a, :b :new-b})
 (set/select odd? #{1 2 3} )
 (data/diff '[1 2 3] '[1 2])
- 
+(zip/xml-zip (xml/parse (java.io.ByteArrayInputStream. (.getBytes "<a href='nakkaya.com'/>"))))
 
