@@ -19,8 +19,8 @@
 (t/ann ^:no-check clojure.set/rename-keys [(t/Map t/Any t/Any) (t/Map t/Any t/Any) -> (t/Map t/Any t/Any)])
 (t/ann ^:no-check clojure.set/select [ (t/IFn [t/AnyInteger -> java.lang.Boolean]) (t/Set t/Any) -> (t/Set t/Any)])
 (t/ann ^:no-check clojure.data/diff [(t/U (t/List t/Any ) (t/HVec [t/Any *] )) (t/U (t/List t/Any ) (t/HVec [t/Any *] ))->  (t/HVec [t/Any *] )])
-(t/ann ^:no-check clojure.xml/parse [ java.io.ByteArrayInputStream -> clojure.lang.PersistentStructMap])
-(t/ann ^:no-check clojure.zip/xml-zip [ clojure.lang.PersistentStructMap -> java.io.ByteArrayInputStream])
+(t/ann ^:no-check clojure.xml/parse [ java.io.ByteArrayInputStream -> t/HMap])
+(t/ann ^:no-check clojure.zip/xml-zip [ t/HMap -> java.io.ByteArrayInputStream])
 
 
 
